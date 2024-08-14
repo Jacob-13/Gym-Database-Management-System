@@ -17,7 +17,7 @@ const Navbar = () => {
           <span class="navbar-toggler-icon"></span>
         </button>
         <Link classname="navbar-brand" to="/">
-          MusicArchive
+          Home
         </Link>
         <Link classname="navbar-brand" to="/memberInfo">
           Member Info

@@ -8,6 +8,7 @@ import Workout from "./Navigation/workoutInfo.navigation.js";
 import RegularMembers from "./Navigation/regularMembers.navigation.js";
 import SessionInformation from "./Navigation/sessionInfo.navagation.js";
 import StudentOfferings from "./Navigation/studentOffering.navigation.js";
+import Home from "./Navigation/Home.js";
 
 //<Route path="/getStudents/" element={<StudentOfferings />}/>
 
@@ -17,12 +18,12 @@ function App() {
       <Navbar />
       <div className="container">
         <Routes>
+            <Route path="/" element={<Home />} />
             <Route path="/instructure" element={<Instructor/>} />
             <Route path="/memberInfo" element={<StudentInfo />} />
             <Route path="/memberships" element={<Membership/>}/>
             <Route path="/workouts" element={<Workout />}/>
             <Route path="/workout/daily" element={<RegularMembers />}/>
-            
             <Route path="/classInfo/" element={<SessionInformation />}/>
         </Routes>
       </div>

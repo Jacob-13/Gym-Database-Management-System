@@ -15,7 +15,7 @@ let connection = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "($urviv0R)",
-    database: "Lab3"
+    database: "gymdbms"
 });
 
 // initiating a connection to the db
@@ -258,7 +258,7 @@ app.get(`/api/workout/:day`, (req, res) => {
     else if (dayOfWeek.toLowerCase() == "thursday") { days = ['01', '08', "15", "22"]; }
     else if (dayOfWeek.toLowerCase() == "friday") { days = ["02", "09", "16", "23"]; }
     else if (dayOfWeek.toLowerCase() == "saturday") { days = ["03", "10", "17", "24"]; }
-    else { console.log("Incompatible entry for dayOfWeek, field auto set to sunday");  days = ['0o4', 11, 18, 25]; }
+    else { console.log("Incompatible entry for dayOfWeek, field auto set to sunday");  days = [04, 11, 18, 25]; }
 
     let workoutSQL = `SELECT accountID, date, signInTime, signOutTime, TIMESTAMPDIFF(MINUTE, signInTime, signOutTime) AS "LengthOfWorkoutInMinutes"
     FROM Workout

@@ -1,8 +1,8 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import MemberInfo from '../components/MemberInfo';
-import MemberPrevWeight from '../components/MemberPrevWeight';
+import MemberInfo from '../Components/MemberInfo';
+import MemberPrevWeight from '../Components/MemberPrevWeight';
 
 const home = () => {
     
