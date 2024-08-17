@@ -1,3 +1,8 @@
+// Personal Note: if db does not connect due to authentication reasons, try the following command: ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '{mysql-authentication-password}';
+// Might need to run 'flush privileges;' to implement the change
+
+// User 18-8223619 has updated Sessions, Offerings, Instructors, and Equipment used to display user updated information
+
 let mysql = require('mysql');
 const express = require('express');
 
